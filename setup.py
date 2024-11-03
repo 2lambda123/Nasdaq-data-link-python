@@ -27,7 +27,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'nasdaqdatalink'))
 # can only import VERSION successfully after the above line
 # ignore flake8 warning that requires imports to be at the top
 from version import VERSION  # NOQA
-from constants import SUPPORT_EMAIL # NOQA
+from constants import SUPPORT_EMAIL  # NOQA
 
 INSTALL_REQUIRES = [
     'pandas >= 0.14',
@@ -40,13 +40,13 @@ INSTALL_REQUIRES = [
 ]
 
 TEST_REQUIRES = [
-        'flake8',
-        'nose',
-        'httpretty',
-        'mock',
-        'factory_boy',
-        'jsondate',
-        'parameterized'
+    'flake8',
+    'nose',
+    'httpretty',
+    'mock',
+    'factory_boy',
+    'jsondate',
+    'parameterized'
 ]
 
 PACKAGES = [
