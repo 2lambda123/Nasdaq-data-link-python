@@ -26,10 +26,10 @@ with open("LONG_DESCRIPTION.rst") as f:
 
 # Don't import nasdaqdatalink module here, since deps may not be installed
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "nasdaqdatalink"))
+from constants import SUPPORT_EMAIL  # NOQA
 # can only import VERSION successfully after the above line
 # ignore flake8 warning that requires imports to be at the top
 from version import VERSION  # NOQA
-from constants import SUPPORT_EMAIL  # NOQA
 
 INSTALL_REQUIRES = [
     "pandas >= 0.14",
