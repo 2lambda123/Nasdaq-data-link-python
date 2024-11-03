@@ -2,8 +2,7 @@ import os
 import sys
 
 if sys.version_info[:2] < (3, 7):
-    raise ImportError(
-        """
+    raise ImportError("""
     This version of Nasdaq Data Link no longer supports python versions less than 3.7.0. If you're
     reading this message your pip and/or setuptools are outdated. Please run the following to
     update them:
@@ -13,8 +12,7 @@ if sys.version_info[:2] < (3, 7):
     Then try to reinstall nasdaq-data-link:
 
     pip install nasdaq-data-link
-    """
-    )
+    """)
 
 try:
     from setuptools import setup

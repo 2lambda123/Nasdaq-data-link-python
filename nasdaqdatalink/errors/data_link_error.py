@@ -20,11 +20,8 @@ If you continue to have problems, please contact us at %{SUPPORT_EMAIL}"
         self.http_headers = http_headers if http_headers is not None else {}
 
         self.data_link_error_code = data_link_error_code
-        self.data_link_message = (
-            data_link_message
-            if data_link_message is not None
-            else self.GENERIC_ERROR_MESSAGE
-        )
+        self.data_link_message = (data_link_message if data_link_message
+                                  is not None else self.GENERIC_ERROR_MESSAGE)
         self.response_data = response_data
 
     def __str__(self):
@@ -38,9 +35,9 @@ If you continue to have problems, please contact us at %{SUPPORT_EMAIL}"
             data_link_error_string = ""
         else:
             data_link_error_string = (
-                "(Nasdaq Data Link Error %(data_link_error_code)s) "
-                % {"data_link_error_code": self.data_link_error_code}
-            )
+                "(Nasdaq Data Link Error %(data_link_error_code)s) " % {
+                    "data_link_error_code": self.data_link_error_code
+                })
         return "%(ss)s%(qes)s%(qm)s" % {
             "ss": status_string,
             "qes": data_link_error_string,
