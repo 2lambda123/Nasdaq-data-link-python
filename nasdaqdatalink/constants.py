@@ -1,1 +1,1 @@
-SUPPORT_EMAIL = 'clientsuccess@nasdaq.com'
+SUPPORT_EMAIL = "clientsuccess@nasdaq.com"
