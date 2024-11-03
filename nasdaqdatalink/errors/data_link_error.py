@@ -2,6 +2,7 @@ from ..constants import SUPPORT_EMAIL
 
 
 class DataLinkError(RuntimeError):
+    """ """
     GENERIC_ERROR_MESSAGE = f"Something went wrong. Please try again. \
 If you continue to have problems, please contact us at %{SUPPORT_EMAIL}"
 
@@ -48,36 +49,45 @@ If you continue to have problems, please contact us at %{SUPPORT_EMAIL}"
 
 
 class AuthenticationError(DataLinkError):
+    """ """
     pass
 
 
 class InvalidRequestError(DataLinkError):
+    """ """
     pass
 
 
 class LimitExceededError(DataLinkError):
+    """ """
     pass
 
 
 class NotFoundError(DataLinkError):
+    """ """
     pass
 
 
 class ServiceUnavailableError(DataLinkError):
+    """ """
     pass
 
 
 class InternalServerError(DataLinkError):
+    """ """
     pass
 
 
 class ForbiddenError(DataLinkError):
+    """ """
     pass
 
 
 class InvalidDataError(DataLinkError):
+    """ """
     pass
 
 
 class ColumnNotFound(DataLinkError):
+    """ """
     pass
